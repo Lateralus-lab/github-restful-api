@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Media } from 'react-bootstrap';
+import {Media} from 'react-bootstrap';
 import Rating from './Rating';
 
 class Product extends Component {
@@ -21,16 +21,12 @@ class Product extends Component {
           <Media.Body>
             <h5>{this.props.data.productName}</h5>
             {this.props.data.releasedDate}
-            <Rating
-              rating={this.props.data.rating}
-              numOfReviews={this.props.data.numOfReviews}
-            />
+            <Rating rating={this.props.data.rating} numOfReviews={this.props.data.numOfReviews}
             <p>{this.props.data.description}</p>
           </Media.Body>
         </Media>
-      </div>
-    );
-  }
+</div>
+              );
 }
 
 export default Product;
